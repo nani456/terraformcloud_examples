@@ -5,7 +5,7 @@ resource "aws_instance" "myec2new22" {
 //for_each = toset(["small-apps","big-apps"])
     instance_type = var.ec2_instance_type
     ami = data.aws_ami.myid.id
-    count = 1
+    count = 2
     region = var.aws_region
     tags={
         Name= "tfcloud-${count.index}"
