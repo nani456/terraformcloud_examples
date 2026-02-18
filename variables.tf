@@ -17,11 +17,11 @@ variable "ec2_instance_count" {
     description = "how many?"
     type = number
     default = 1
-    sensitive = true
+    sensitive = false
   
 }
 variable "ec2_instance_type" {
     type = map(string)
-    sensitive = true
+    sensitive = false
    // default ="t3.micro"
 }
