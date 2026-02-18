@@ -21,7 +21,7 @@ variable "ec2_instance_count" {
   
 }
 variable "ec2_instance_type" {
-    type = map(string)
+    type = string
     sensitive = false
-   // default ="t3.micro"
+    default ="t3.micro"
 }
