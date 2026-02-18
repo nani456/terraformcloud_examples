@@ -1,13 +1,13 @@
 output "instance_publicip" {
     description = "my ec2 public ip"
-    sensitive = true
-    value = aws_instance.myec2new22.public_ip
+    sensitive = false
+    value = aws_instance.myec2new22[count.index].public_ip
   
 }
 output "instance_dns" {
     description = "my ec2 dns"
-        value = aws_instance.myec2new22.public_dns
-        sensitive = true
+        value = aws_instance.myec2new22[count.index].public_dns
+        sensitive = false
 
   
 }
