@@ -1,7 +1,7 @@
 variable "aws_region" {
     description = "region in which aws resources to be created"
     type = string
-    default = "ap-south-2"
+  //  default = "ap-south-2"
   
 }
 
@@ -16,7 +16,7 @@ variable "aws_region" {
 variable "ec2_instance_count" {
     description = "how many?"
     type = number
-    default = 1
+   // default = 1
     sensitive = false
   
 }
