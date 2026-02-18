@@ -16,7 +16,7 @@ variable "aws_region" {
 variable "ec2_instance_count" {
     description = "how many?"
     type = number
-   // default = 1
+   default = 1
     sensitive = false
   
 }
